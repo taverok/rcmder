@@ -1,0 +1,17 @@
+server:
+  port: 9090
+logging:
+  level:
+    com.taverok.rcmderweb: debug
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 1
+    hikari:
+      connection-test-query: SELECT 1
+  jpa:
+    show-sql: true

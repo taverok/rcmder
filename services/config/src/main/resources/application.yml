@@ -1,0 +1,10 @@
+server:
+  port: 9080
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:  file:///home/f3l1s/java/rcmder/services/config/src/main/resources/config/web
